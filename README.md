@@ -4,7 +4,7 @@ FIXME: description
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Download from http://leancop.de/epicc/.
 
 ## Prerequisites
 
