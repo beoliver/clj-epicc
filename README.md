@@ -6,7 +6,13 @@ FIXME: description
 
 Download from http://example.com/FIXME.
 
-## Usage
+## Prerequisites
+
+If you only want to read input files and output files then you do not require any additional dependencies. If you want EPICC to run a theorem prover then you need an Prolog implementation and custom version of [https://github.com/beoliver/leanCoP](https://github.com/beoliver/leanCoP)
+
+## Easy installation
+
+It is advised to use the version of EPICC is available at [http://leancop.de/epicc/](http://leancop.de/epicc/) that contains all dependencies and scripts.
 
 FIXME: explanation
 
