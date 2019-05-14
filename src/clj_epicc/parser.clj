@@ -1,4 +1,4 @@
-(ns clj-epicc.parsers
+(ns clj-epicc.parser
   (:require [clj-epicc.data :as data])
   (:import [java.io
             Reader
