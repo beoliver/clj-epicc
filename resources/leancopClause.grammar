@@ -1,0 +1,11 @@
+matrix      = <'cnf'> <'('> id <','> <'conjecture'> <','> <'['> (clause (<','> clause)*)* <']'> <')'> <'.'>
+id          = <'\''> #'[a-zA-Z0-9\./\\\-\+]+' <'\''>
+clause      = <'['> formula (<','> formula)* <']'>
+<formula>   = not | predicate | equality
+not         = <'-('> formula <')'> | <'-'> formula
+equality    = term <'='> term | <'('> term <'='> term <')'>
+<term>      = variable | constant | function
+predicate   = #'[a-z][a-zA-Z0-9_]*' <'('> (term (<','> term)*)* <')'> | #'[a-z][a-zA-Z0-9_]*'
+constant    = #'[a-zA-Z0-9][a-zA-Z0-9_]*'
+function    = #'[a-zA-Z][a-zA-Z0-9_]*' <'('> term (<','> term)* <')'>
+variable    = #'_[a-zA-Z0-9_]*'
